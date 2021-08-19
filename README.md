@@ -52,3 +52,16 @@ ansadmin   ALL=(ALL)   NOPASSWD: ALL
 PasswordAuthentication yes
 
 ```
+
+#### 8. sudo su ansadmin
+
+#### ansible --version config file is the default
+```
+#exit to user
+sudo su -
+
+sudo su ansadmin
+
+#create a ansible config for non prod
+mkdir
+ my_ansible_dev
