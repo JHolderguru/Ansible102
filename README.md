@@ -65,3 +65,22 @@ sudo su ansadmin
 #create a ansible config for non prod
 mkdir
  my_ansible_dev
+
+cd my_ansible_dev
+
+ansible --version
+#the config file will bet he default but we can make one for dev
+
+ touch ansible.cfg
+
+ansible --version
+#note that the config file is local
+
+touch hosts
+# create the same user on all the nodes and exchange the ssh keys with your hosts
+
+
+  ```
+  #### 9. Steps to make and exchange keys
+  ```ssh-keygen
+  ```
