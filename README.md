@@ -82,5 +82,42 @@ touch hosts
 
   ```
   #### 9. Steps to make and exchange keys
-  ```ssh-keygen
+  ```
+  ssh-keygen
+
+  cd ./ssh
+
+#share key with the managed node
+  ssh-copy-id 172.31.5.69
+
+  #now ssh into agent
+
+  ssh 172.31.5.69
+
+  # do the same for your other nodes
+  ```
+
+  #### 9. Establish the nodes
+
+  ```
+  vi ansible
+  #then add [defaults]
+  inventory  =./hosts
+
+  #make sure your ips are pasted in the hosts file
+
+  vi hosts
+
+  ```
+
+  #### 10.
+  Grouping your hosts
+
+  ```
+  vi hosts
+  [databases]
+  place ips
+  #[servers]
+  place ips
+
   ```
