@@ -95,6 +95,8 @@ touch hosts
   ssh 172.31.5.69
 
   # do the same for your other nodes
+
+  #Note that I have also created the ansadmin user on the nodes and permitted root admin and password.
   ```
 
   #### 9. Establish the nodes
