@@ -123,3 +123,22 @@ touch hosts
   place ips
 
   ```
+  #### 11. Adhoc cmd
+  ##### ansible databases -m ping
+  -------------------------------------
+  ##### (shell module)
+  ##### ansible 172.31.5.69 -m shell -a "uptime"
+  ##### (checking uptime for more than 1 group)
+  ##### ansible databases:servers -m shell -a "uptime"
+  ##### ansible databases:servers -m shell -a "free -m"
+
+---------------------------------------
+  #### (different inventory file)
+  ##### ansible -i prod_inv -m shell -a "uptime"
+  ##### ansible -i prod_inv -m shell -a "free -m"
+  -----------------------------------
+
+  #### 12. Adhoc commands syntax :
+  #### ansible [-i pro_inv] server_name:server2:databases -m module
+
+  (module based on task ping module has no args but shell has args)
