@@ -139,6 +139,9 @@ touch hosts
   -----------------------------------
 
   #### 12. Adhoc commands syntax :
-  #### ansible [-i pro_inv] server_name:server2:databases -m module
+  #### ansible [-i pro_inv] server_name:server2:databases -m module [-a (argument value)]
 
   (module based on task ping module has no args but shell has args)
+#### To see All Module (around 2800 inc AWS ones)
+  ansible-doc -l
+  ansible-doc -l | wc -l
