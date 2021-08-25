@@ -88,11 +88,11 @@ touch hosts
   cd ./ssh
 
 #share key with the managed node
-  ssh-copy-id 172.31.5.69
+  ssh-copy-id 172.x.xx.xx
 
   #now ssh into agent
 
-  ssh 172.31.5.69
+  ssh 172.xx.x.xx
 
   # do the same for your other nodes
 
@@ -127,7 +127,7 @@ touch hosts
   ##### ansible databases -m ping
   -------------------------------------
   ##### (shell module)
-  ##### ansible 172.31.5.69 -m shell -a "uptime"
+  ##### ansible 172.x.x.xx -m shell -a "uptime"
   ##### (checking uptime for more than 1 group)
   ##### ansible databases:servers -m shell -a "uptime"
   ##### ansible databases:servers -m shell -a "free -m"
